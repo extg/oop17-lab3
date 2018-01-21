@@ -1,6 +1,7 @@
 #ifndef WAV_CORE_H
 #define WAV_CORE_H
 
+
 #include <vector>
 
 #include "wav_header.h"

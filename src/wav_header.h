@@ -45,10 +45,10 @@ struct wav_header_s
   // Аудио формат, полный список можно получить здесь http://audiocoding.ru/wav_formats.txt
   // Для PCM = 1 (то есть, Линейное квантование).
   // Значения, отличающиеся от 1, обозначают некоторый формат сжатия.
-  unsigned short audioFormat;
+  uint16_t audioFormat;
 
   // Количество каналов. Моно = 1, Стерео = 2 и т.д.
-  unsigned short numChannels;
+  uint16_t numChannels;
 
   // Частота дискретизации. 8000 Гц, 44100 Гц и т.д.
   uint32_t sampleRate;
@@ -58,10 +58,10 @@ struct wav_header_s
 
   // numChannels * bitsPerSample/8
   // Количество байт для одного сэмпла, включая все каналы.
-  unsigned short blockAlign;
+  uint16_t blockAlign;
 
   // Так называемая "глубиная" или точность звучания. 8 бит, 16 бит и т.д.
-  unsigned short bitsPerSample;
+  uint16_t bitsPerSample;
 
   // Подцепочка "data" содержит аудио-данные и их размер.
 
